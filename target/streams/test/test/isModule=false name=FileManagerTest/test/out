@@ -1,0 +1,13 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mFileManagerTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mFileManager[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be instancied in the current directory when no parameters are given[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept a globalPath string parameter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mwriteFile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept one path String and one text String parameter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a file if it doesn't exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true if the operation succeeded[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if the operation failed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mreadFile[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should accept one path String parameter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Option[String] if the operation succeeded[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if the operation failed[0m[0m

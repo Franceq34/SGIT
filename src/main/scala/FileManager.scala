@@ -1,6 +1,6 @@
 import java.io._
 
-class FileManager(globalPath:String = "."){
+class FileManager(val globalPath:String = "."){
   import FileManager._
 
   def readFile(path:String): Option[String] = {
