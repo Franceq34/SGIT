@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1009ef14-35db-4b09-8822-094f6b3b623f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Commands.scala" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Blob.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Commands.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/FileManager.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Object.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/FileManager$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/FileManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/META-INF/SGIT.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HEAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HEAD.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/active.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Hello.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Commands$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Commands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/HelloWorld$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/HelloWorld$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +124,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
