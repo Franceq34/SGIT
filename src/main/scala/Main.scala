@@ -1,16 +1,10 @@
-import java.io._
+import tools.FileManager
+import commands._
 
-object HelloWorld {
+object Main {
   def main(args: Array[String]): Unit = {
-    init()
-    Commands.add("coucou.txt")
-  }
-
-  def init(): Unit ={
     val fm:FileManager = new FileManager("/home/quentin/IdeaProjects/output/")
-    fm.createDir(".sgit/objects")
-    fm.createDir(".sgit/refs/heads")
-    fm.createDir(".sgit/refs/tags")
-    fm.writeFile(".sgit/HEAD.txt", "ref: refs/heads/master")
+    Init(fileManager = fm)
+    Add(fileManager = fm, path = "")
   }
 }

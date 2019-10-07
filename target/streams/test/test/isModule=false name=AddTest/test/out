@@ -1,0 +1,4 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mAddTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAdd[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if you try to add an unknown directory or file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if you try to add .git and its children[0m[0m

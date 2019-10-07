@@ -3,11 +3,40 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should be instancied in the current directory when no parameters are given[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should accept a globalPath string parameter[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mwriteFile[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should accept one path String and one text String parameter[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should create a file if it doesn't exist[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return true if the operation succeeded[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if the operation failed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should accept one path String and one text String parameter *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  fm.writeFile("/testfile", "") was false (FileManagerTest.scala:18)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should create a file if it doesn't exist *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  fm.writeFile("/testfile", "HelloWorld") was false (FileManagerTest.scala:23)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return true if the operation succeeded *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  fm.writeFile("/testfile", "HelloWorld") was false (FileManagerTest.scala:28)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return false if the operation failed *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  fm.writeFile("//", "HelloWorld") was true (FileManagerTest.scala:33)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mreadFile[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should accept one path String parameter[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return Option[String] if the operation succeeded[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if the operation failed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should accept one path String parameter *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.util.NoSuchElementException: None.get[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.None$.get(Option.scala:627)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.None$.get(Option.scala:626)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at FileManagerTest.$anonfun$new$7(FileManagerTest.scala:38)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return Option[String] if the operation succeeded *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.util.NoSuchElementException: None.get[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.None$.get(Option.scala:627)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at scala.None$.get(Option.scala:626)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at FileManagerTest.$anonfun$new$8(FileManagerTest.scala:43)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:20)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.FlatSpecLike$$anon$5.apply(FlatSpecLike.scala:1682)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return false if the operation failed *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Some("HelloWorld") was not empty (FileManagerTest.scala:48)[0m[0m
