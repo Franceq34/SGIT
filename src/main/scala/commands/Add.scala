@@ -5,7 +5,7 @@ import crypt.{Crypt, CryptSHA1}
 object Add {
 
   def apply(fileManager: FileManager, path:String): Boolean ={
-    if(fileManager.exists(path) && !path.startsWith(".git")){
+    if(fileManager.exists(path) && !path.startsWith(".sgit")){
       //if it's a directory
       if(fileManager.isDirectory(path)){
         //call add() on each child
