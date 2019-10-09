@@ -3,9 +3,9 @@ import tools.FileManager
 
 object Init {
 
-  def apply(fileManager: FileManager): Unit ={
+  def apply(): Unit ={
     val dirs = List(".sgit/objects", ".sgit/refs/heads", ".sgit/refs/tags")
-    dirs.map((path:String) => fileManager.createDir(path))
-    fileManager.writeFile(".sgit/HEAD.txt", "ref: refs/heads/master")
+    dirs.map((path:String) => FileManager.createDir(path))
+    FileManager.writeFile(".sgit/HEAD.txt", "ref: refs/heads/master")
   }
 }
