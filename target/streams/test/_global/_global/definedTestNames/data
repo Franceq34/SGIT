@@ -1,1 +1,1 @@
-["CryptSHA1Test","FileManagerTest","AddTest"]
+["CryptSHA1Test","BlobTest","IndexTest","CommitTest"]

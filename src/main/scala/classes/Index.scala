@@ -1,21 +1,12 @@
 package classes
 
-import tools.FileManager
+import tools.{FileManager, CryptSHA1}
 
 case class Index(list: List[Blob] = List()){
 
-  def current():Option[Index] ={
-    try{
-      val index = FileManager.readFile(".sgit/index")
-      println(index)
-      val blobs = index.getOrElse("").split("\n").map(str => Blob(str.split(" ")(0), "", str.split(" ")(1)))
-      println("blobs : "+blobs.toList)
-      Some(Index(blobs.toList))
-    }
-    catch
-      {
-        case _: Throwable => return None
-      }
+  override def toString: String = {
+    val newList = list.map(b => b.toStringIndex())
+    newList.mkString("\n")
   }
 
   def add(blob:Blob):Index ={
@@ -32,15 +23,14 @@ case class Index(list: List[Blob] = List()){
   def update(oldIndex: Index):Index = {
     //Ajoute à la liste de this tous les blobs de oldIndex qui ne sont pas déjà présents
     Index(list ++ oldIndex.list.flatMap{
-      case blob if !list.contains(blob) => Some(blob)
+      case blob if !list.contains(blob) => {
+        Some(blob)
+      }
       case _ => None
     })
   }
 
   def containsBlob(blob: Blob):Boolean = { list.exists(b => blob.hasSamePathThan(b) || blob.hasSameHashThan(b)) }
 
-  def save(): Boolean ={
-    val newList = list.map(b => b.toStringIndex())
-    FileManager.writeFile(".sgit/index", newList.mkString("\n").concat("\n"))
-  }
+  def saveAsStage(): Boolean = FileManager.writeFile(".sgit/index", toString)
 }

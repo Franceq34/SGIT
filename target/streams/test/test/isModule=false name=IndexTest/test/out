@@ -1,0 +1,14 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mIndexTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcurrent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32madd[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcontainsBlob[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msaveAsStage[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mtoString[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should a stringified version of the index[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty string when the Index is empty[0m[0m
