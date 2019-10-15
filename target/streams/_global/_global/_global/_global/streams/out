@@ -1,0 +1,18 @@
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [sgit / assembly] Found inputs: /home/quentin/IdeaProjects/SGIT/*.{java,scala},/home/quentin/IdeaProjects/SGIT/src/main/java/**/*.{java,scala},/home/quentin/IdeaProjects/SGIT/src/main/scala/**/*.{java,scala},/home/quentin/IdeaProjects/SGIT/src/main/scala-2.13/**/*.{java,scala},/home/quentin/IdeaProjects/SGIT/src/test/java/**/*.{java,scala},/home/quentin/IdeaProjects/SGIT/src/test/resources/**/*,/home/quentin/IdeaProjects/SGIT/src/test/scala/**/*.{java,scala},/home/quentin/IdeaProjects/SGIT/src/test/scala-2.13/**/*.{java,scala}[0m
+[0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for sgit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0msgit / assembly - Accepted event for /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0msgit / assembly - Accepted event for /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0msgit / assembly - Accepted event for /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala (previous stamp: Hash(8512ebebceac61e3ad70994155f405f8637b37df), current stamp: Hash(b6bfc966a33240f9d468d9fedafcabea7b398d66))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala -> Trigger. Returning: (Update(/home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala, 2019-oct.-14 22:39:32.283 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala. Running 'assembly'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala, 2019-oct.-14 22:39:32.283 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for sgit/assembly...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path /home/quentin/IdeaProjects/SGIT/src/main/scala/Launcher.scala. This event occurred 2 ms since the last event for this path.[0m

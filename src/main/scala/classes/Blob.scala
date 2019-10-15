@@ -4,7 +4,7 @@ import tools.FileManager
 
 case class Blob(override val idHash: String, content: String, path: String) extends SGITObject{
 
-  def toStringIndex(): String = idHash + " "  + path
+  override def toString: String = idHash + " "  + path
 
   def hasSamePathThan(b: Blob): Boolean = path == b.path
 

@@ -5,7 +5,7 @@ class BlobTest extends FlatSpec{
 
   "toStringIndex" should "return a String that includes hash and path" in{
     val blob:Blob = Blob(idHash = "a", content = "b", "c")
-    assert(blob.toStringIndex() == "a c")
+    assert(blob.toString() == "a c")
   }
 
   "hasSamePathThan" should "return true" in{

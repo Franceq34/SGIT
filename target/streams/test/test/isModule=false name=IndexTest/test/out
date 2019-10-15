@@ -1,14 +1,19 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mIndexTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcurrent[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32madd[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mupdate[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mcontainsBlob[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32msaveAsStage[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mtoString[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should a stringified version of the index[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty string when the Index is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a string representation of a one blob index[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a string representation of a two blobs index[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty string when it has no blobs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32misEmpty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true when given an empty index[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false when given an index with one element[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32madd[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a new index containing only the blob given in parameter when it is empty[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a new index with a size of n+1 when given a new blob in parameter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a new index with a size of n when given a blob already in the index[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetNewBlobs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an index of size 0 when given an empty index in parameter[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an index of size 1 when given an index with 1 blob which has no blob with same hash[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an index of size 0 when given an index with 1 blob which has same hash than another blob[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mcontainsBlob[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true when given a blob that has same hash than another in the index[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false when given a blob that hasnt same hash than another in the index[0m[0m

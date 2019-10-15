@@ -1,43 +1,60 @@
-[0m[[0m[0minfo[0m] [0m[0mIncluding: scala-library-2.13.1.jar[0m
+[0m[[0m[0minfo[0m] [0m[0mIncluding from cache: scala-library-2.13.1.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0mCalculate mappings...[0m
 [0m[[0m[0minfo[0m] [0m[0mChecking every *.class/*.jar file's SHA-1.[0m
 [0m[[0m[0minfo[0m] [0m[0mMerging files...[0m
-[0m[[0m[33mwarn[0m] [0m[0mMerging 'NOTICE' with strategy 'rename'[0m
-[0m[[0m[33mwarn[0m] [0m[0mMerging 'LICENSE' with strategy 'rename'[0m
 [0m[[0m[33mwarn[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[0m[33mwarn[0m] [0m[0mStrategy 'discard' was applied to a file[0m
-[0m[[0m[33mwarn[0m] [0m[0mStrategy 'rename' was applied to 2 files[0m
-[0m[[0m[0minfo[0m] [0m[0mSHA-1: 64e9fb1c1b0d07d81fcfa5ba64141098e6a61872[0m
+[0m[[0m[0minfo[0m] [0m[0mSHA-1: 85faf064b70f088908c2141b7f2ab052cafc73f1[0m
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /home/quentin/IdeaProjects/SGIT/target/scala-2.13/SGIT-assembly-0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Blob$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Blob$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Blob.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Blob.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Commands$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Commands$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Commands.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Commands.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManager$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/FileManager$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FileManager.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/FileManager.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	LICENSE_scala-library-2.13.1[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1ad0eabd38275eea42b831422b54aa8ee6704694_1418c956704990564fb9dfac5960647ca54b5a91_da39a3ee5e6b4b0d3255bfef95601890afd80709/LICENSE_scala-library-2.13.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Launcher$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Launcher$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Launcher.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Launcher.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	META-INF/SGIT.kotlin_module[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/META-INF/SGIT.kotlin_module[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	NOTICE_scala-library-2.13.1[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1ad0eabd38275eea42b831422b54aa8ee6704694_1418c956704990564fb9dfac5960647ca54b5a91_da39a3ee5e6b4b0d3255bfef95601890afd80709/NOTICE_scala-library-2.13.1[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Object.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/Object.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	crypt/Crypt.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/crypt/Crypt.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	crypt/CryptSHA1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/crypt/CryptSHA1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Blob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Blob$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Blob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Blob.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Branch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Branch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Branch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Branch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Commit$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Commit$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Commit.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Commit.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Index$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Index$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/Index.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/Index.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	classes/SGITObject.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/classes/SGITObject.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITAdd$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITAdd$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITAdd.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITAdd.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITBranch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITBranch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITBranch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITBranch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITCommit$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITCommit$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITCommit.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITCommit.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITDiff$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITDiff$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITDiff.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITDiff.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITInit$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITInit$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	commands/SGITInit.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/commands/SGITInit.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	library.properties[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1ad0eabd38275eea42b831422b54aa8ee6704694_1418c956704990564fb9dfac5960647ca54b5a91_da39a3ee5e6b4b0d3255bfef95601890afd80709/library.properties[0m
 [0m[[0m[0mdebug[0m] [0m[0m	rootdoc.txt[0m
@@ -5700,4 +5717,16 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1ad0eabd38275eea42b831422b54aa8ee6704694_1418c956704990564fb9dfac5960647ca54b5a91_da39a3ee5e6b4b0d3255bfef95601890afd80709/scala/util/package.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	scala/volatile.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1ad0eabd38275eea42b831422b54aa8ee6704694_1418c956704990564fb9dfac5960647ca54b5a91_da39a3ee5e6b4b0d3255bfef95601890afd80709/scala/volatile.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tools/CryptSHA1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/tools/CryptSHA1$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tools/CryptSHA1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/tools/CryptSHA1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tools/FileManager$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/tools/FileManager$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tools/FileManager.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/tools/FileManager.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tools/Reader$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/tools/Reader$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tools/Reader.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/quentin/IdeaProjects/SGIT/target/streams/_global/assemblyOption/_global/streams/assembly/1983d9fc50a4eb065a344bed5bcd3671f3a274a0_dir/tools/Reader.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

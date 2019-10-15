@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mCommitTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mtoString[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a String that representing elements separated by spaces[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32maddToObjects[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true if the operations succeded[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32maddToObjects[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if the operations failed[0m[0m
