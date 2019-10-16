@@ -37,6 +37,20 @@ case class Index(list: List[Blob] = List()){
     })
   }
 
+  //Creates an index with the blobs in newIndex that have same path but different hash than another blob  in this
+  def getBlobsUpdated(newIndex: Index):Index = {
+    Index(newIndex.list.flatMap{
+      case blob if this.containsBlobWithSamePathButDifferentHash(blob) => {
+        Some(blob)
+      }
+      case _ => {
+        None
+      }
+    })
+  }
+
+  def containsBlobWithSamePathButDifferentHash(blob: Blob):Boolean = list.exists(b => !blob.hasSameHashThan(b) && blob.hasSamePathThan(b))
+
   def containsBlob(blob: Blob):Boolean = list.exists(b => blob.hasSameHashThan(b))
 
   def saveAsStage(): Boolean = FileManager.writeFile(".sgit/index", text = toString)

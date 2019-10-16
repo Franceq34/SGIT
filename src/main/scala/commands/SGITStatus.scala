@@ -14,19 +14,24 @@ object SGITStatus {
         val blobsUncommitted = Index(allBranchBlobs).getNewBlobs(Index(blobsFromWD))
         val blobsFromIndex = Reader.currentIndex().getOrElse(Index())
         val blobsUntracked = blobsFromIndex.getNewBlobs(blobsUncommitted)
-
+        val blobsUpdated = blobsFromIndex.getBlobsUpdated(Index(blobsFromWD))
 
         //Print current branch
         println("On branch " + branch.name + "\n")
+
+        if(allBranchBlobs.isEmpty) println("No commits yet\n")
 
         //Print untracked files
         if(blobsUntracked.size>0) println("Untracked files:\n"+blobsUntracked + "\n")
 
         //Print tracked files not committed
         if(blobsFromIndex.size>0) println("Changes to be committed:\n"+blobsFromIndex + "\n")
+        else
+        if (blobsUntracked.list.isEmpty) println("no changes added to commit.")
+        else println("nothing added to commit but untracked files present")
 
         //Print files updated since last add
-        println("Changes not staged for commit:")
+        if(blobsUpdated.size>0) println("Changes not staged for commit:\n"+blobsUpdated+"\n")
 
       }
       case None => println("Fatal error")

@@ -13,5 +13,6 @@ object SGITInit {
     masterBranch.init()
     //HEAD file creation
     FileManager.writeFile(".sgit/HEAD.txt", "ref: refs/heads/master")
+    println("Initialized empty Git repository in " + System.getProperty("user.dir") + "/.git/")
   }
 }

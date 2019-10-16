@@ -24,7 +24,6 @@ object FileManager{
     {
       def readFileRec(br:BufferedReader): String = {
         val st = br.readLine()
-        println(st)
         if ( st!= null) st + "\n" + readFileRec(br)
         else ""
       }
