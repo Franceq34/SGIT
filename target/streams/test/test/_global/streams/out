@@ -1,12 +1,12 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CryptSHA1Test, org.scalatest.tools.Framework$$anon$1@6e1d91cd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileManagerTest, org.scalatest.tools.Framework$$anon$1@6e1d91cd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexTest, org.scalatest.tools.Framework$$anon$1@6e1d91cd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BlobTest, org.scalatest.tools.Framework$$anon$1@6e1d91cd, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CommitTest, org.scalatest.tools.Framework$$anon$1@6e1d91cd, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 273 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 33[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(FileManagerTest, org.scalatest.tools.Framework$$anon$1@7218ebca, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CommitTest, org.scalatest.tools.Framework$$anon$1@7218ebca, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(IndexTest, org.scalatest.tools.Framework$$anon$1@7218ebca, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(CryptSHA1Test, org.scalatest.tools.Framework$$anon$1@7218ebca, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BlobTest, org.scalatest.tools.Framework$$anon$1@7218ebca, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 186 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 38[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 33, failed 0, canceled 0, ignored 2, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 38, failed 0, canceled 0, ignored 2, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CryptSHA1Test[0m

@@ -1,6 +1,6 @@
 import tools.FileManager
-import org.scalatest._
 import java.io._
+import org.scalatest._
 import scala.util.Random
 import scala.annotation.tailrec
 
@@ -67,6 +67,8 @@ class FileManagerTest extends FlatSpec {
     assert(newFile.createNewFile())
     assert(newFile2.createNewFile())
     assert(FileManager.listFiles(pathDirectoryUnknown).get.sorted == List("abc.txt", "def.txt").sorted)
+    newFile.delete()
+    newFile2.delete()
     newDirectory.delete()
   }
 
@@ -126,6 +128,47 @@ class FileManagerTest extends FlatSpec {
     fileWriter.close()
     assert(FileManager.readFile(pathFileUnknown).get == "A text\non many lines\n")
     newFile.delete()
+  }
+
+  "createDir" should "create a new directory and return true when given a valid path" in {
+    val pathFileUnknown = rdmPathUnknown()
+    assert(FileManager.createDir(pathFileUnknown))
+    assert(FileManager.exists(pathFileUnknown))
+    val newDirectory = new File(pathFileUnknown)
+    newDirectory.delete()
+  }
+
+  it should "create nothing and return false when given an already existing directory path" in {
+    val pathFileUnknown = rdmPathUnknown()
+    val newDirectory = new File(pathFileUnknown)
+    newDirectory.mkdir()
+    assert(!FileManager.createDir(pathFileUnknown))
+    newDirectory.delete()
+  }
+
+  "writeFile" should "create a new file and return true when given an unknown path" in {
+    val pathFileUnknown = rdmPathUnknown()
+    assert(FileManager.writeFile(pathFileUnknown, ""))
+    val file = new File(pathFileUnknown)
+    assert(file.exists())
+    file.delete()
+  }
+
+  it should "create a new file with correct content and return true when given an unknown path and text" in {
+    val pathFileUnknown = rdmPathUnknown()
+    assert(FileManager.writeFile(pathFileUnknown, "A simple text\nOn several lines"))
+    val file:File = new File(pathFileUnknown)
+    assert(FileManager.readFile(pathFileUnknown).get == "A simple text\nOn several lines")
+    file.delete()
+  }
+
+  it should "replace the content of a file and return true when given a path from existing file" in {
+    val pathFileUnknown = rdmPathUnknown()
+    val file:File = new File(pathFileUnknown)
+    assert(file.createNewFile())
+    assert(FileManager.writeFile(pathFileUnknown, "A simple text"))
+    assert(FileManager.readFile(pathFileUnknown).get == "A simple text")
+    file.delete()
   }
 
   //Return a path from a file that doesn't exist

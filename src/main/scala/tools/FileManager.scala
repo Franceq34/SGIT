@@ -22,6 +22,12 @@ object FileManager{
   def readFile(path:String): Option[String] = {
     try
     {
+      def readFileRec(br:BufferedReader): String = {
+        val st = br.readLine()
+        println(st)
+        if ( st!= null) st + "\n" + readFileRec(br)
+        else ""
+      }
       val br = new BufferedReader(new FileReader(path))
       val str = readFileRec(br)
       val res = str.substring(0, str.lastIndexOf("\n"))
@@ -34,14 +40,7 @@ object FileManager{
     }
   }
 
-  private def readFileRec(br:BufferedReader): String = {
-    val st = br.readLine()
-    println(st)
-    if ( st!= null) st + "\n" + readFileRec(br)
-    else ""
-  }
-
-  def createDir(path:String): Boolean = if(!exists(path)){ new File(path).mkdirs() } else true
+  def createDir(path:String): Boolean = if(!exists(path)){ new File(path).mkdirs() } else false
 
   def writeFile(path:String, text: String): Boolean = {
     try

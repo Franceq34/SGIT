@@ -15,6 +15,7 @@ object SGITStatus {
         val blobsFromIndex = Reader.currentIndex().getOrElse(Index())
         val blobsUntracked = blobsFromIndex.getNewBlobs(blobsUncommitted)
 
+
         //Print current branch
         println("On branch " + branch.name + "\n")
 
