@@ -1,2 +1,6 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /home/quentin/IdeaProjects/SGIT/project/target/.sbt-compilation-infos/sgit-test/.sbt-idea-lock ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /home/quentin/IdeaProjects/SGIT/project/target/.sbt-compilation-infos/sgit-test/.sbt-idea-lock.[0m
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/quentin.france/IdeaProjects/SGIT/project/target/.sbt-compilation-infos/sgit-test/.sbt-idea-lock ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/quentin.france/IdeaProjects/SGIT/src/test/scala/FileManagerTest.scala:83:11: Option[String] and String are unrelated: they will most likely never compare equal[0m
+[0m[[0m[33mwarn[0m] [0m[0m    assert(FileManager.readFile(pathFileUnknown) == "")[0m
+[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/quentin.france/IdeaProjects/SGIT/project/target/.sbt-compilation-infos/sgit-test/.sbt-idea-lock.[0m

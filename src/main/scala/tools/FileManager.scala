@@ -1,5 +1,4 @@
 package tools
-
 import java.io._
 
 object FileManager{
@@ -10,7 +9,15 @@ object FileManager{
 
   def isFile(path:String): Boolean ={ new File(path).isFile }
 
-  def listFiles(path:String): Option[List[String]] ={ Some(new File(path).listFiles().map((f:File) => f.getName).toList) }
+  def listFiles(path:String): Option[List[String]] ={
+    try {
+      Some(new File(path).listFiles().map((f:File) => f.getName).toList)
+    }
+    catch
+      {
+        case _: Throwable => None
+      }
+  }
 
   def readFile(path:String): Option[String] = {
     try
@@ -29,6 +36,7 @@ object FileManager{
 
   private def readFileRec(br:BufferedReader): String = {
     val st = br.readLine()
+    println(st)
     if ( st!= null) st + "\n" + readFileRec(br)
     else ""
   }
