@@ -1,7 +1,7 @@
-import commands._
+import tools.Parser
 
 object Launcher {
   def main(args: Array[String]): Unit = {
-    SGITStatus()
+    Parser(args)
   }
 }

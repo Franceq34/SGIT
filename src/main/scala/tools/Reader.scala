@@ -74,25 +74,31 @@ object Reader {
   }
 
   def getBlobsFromPath(path:String):List[Blob] ={
-    if(FileManager.exists(path) && !path.contains(".sgit")){
-      //if it's a directory
-      if(FileManager.isDirectory(path)){
-        //call add() on each child
-        val files = FileManager.listFiles(path).getOrElse(List[String]())
-        files.flatMap((str: String) => getBlobsFromPath(path + "/" + str))
-      }
-      //if it's a file
-      else if(FileManager.isFile(path)){
-        //add the file
-        List(getBlobFromPath(path))
+    try {
+      if(FileManager.exists(path) && !path.contains(".sgit")){
+        //if it's a directory
+        if(FileManager.isDirectory(path)){
+          //call add() on each child
+          val files = FileManager.listFiles(path).getOrElse(List[String]())
+          files.flatMap((str: String) => getBlobsFromPath(path + "/" + str))
+        }
+        //if it's a file
+        else if(FileManager.isFile(path)){
+          //add the file
+          List(getBlobFromPath(path))
+        }
+        else {
+          List()
+        }
       }
       else {
         List()
       }
     }
-    else {
-      List()
-    }
+    catch
+      {
+        case _: Throwable => List()
+      }
   }
 
   def getBlobFromPath(path:String): Blob ={
