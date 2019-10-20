@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mBranchTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32maddCommit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a new Branch containing the new Commit[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetAllBlobs[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return all the blobs in the branch[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return all the blobs in the branch in all the commits[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return all the blobs in the branch in all the commits only once when blobs are duplicated[0m[0m

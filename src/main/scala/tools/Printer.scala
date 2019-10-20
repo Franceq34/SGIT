@@ -1,13 +1,20 @@
 package tools
 
-import classes.{Branch, Index}
+import classes.{BlobUpdated, Branch, Commit, Difference, Index}
+import commands.SGITDiff.seqDiffsToString
 
 object Printer {
+  def logCommits(commits:List[Commit]): Unit = println(commits.map(commit => commit.toStringLog).mkString("\n") + "\n")
+
+  def diffs(blobUpdated: BlobUpdated):Unit = if(blobUpdated.differences.nonEmpty) println(blobUpdated + "\n")
+
+  def notAGitRepo(): Unit = println("fatal: not a sgit repository")
+
   def unknownArgument(): Unit = println("Unknown argument")
 
-  def init(): Unit = println("Initialized empty Git repository in " + System.getProperty("user.dir") + "/.sgit/")
+  def init(): Unit = println("Initialized empty SGit repository in " + System.getProperty("user.dir") + "/.sgit/")
 
-  def reinit(): Unit = println("Reinitialized existing Git repository in " + System.getProperty("user.dir") + "/.sgit/")
+  def reinit(): Unit = println("Reinitialized existing SGit repository in " + System.getProperty("user.dir") + "/.sgit/")
 
   def fatalError(): Unit = println("Fatal error")
 

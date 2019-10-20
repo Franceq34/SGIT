@@ -26,3 +26,5 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create a new file and return true when given an unknown path[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create a new file with correct content and return true when given an unknown path and text[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should replace the content of a file and return true when given a path from existing file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mdeleteFileRec[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return true and delete every folder and file from path when given a valid path[0m[0m

@@ -5,14 +5,14 @@ import tools.{Printer, Reader}
 object SGITStatus {
 
   def apply(): Unit = {
-    status(Reader.currentBranch(), Reader.getBlobsFromPath("test"), Reader.currentIndex())
+    status(Reader.currentBranch(), Reader.getBlobsFromPath("."), Reader.currentIndex())
   }
 
   def status(currentBranch:Option[Branch], blobsFromWD: List[Blob], blobsFromIndex: Option[Index]): Unit ={
-    if(currentBranch.isDefined && blobsFromIndex.isDefined){
+    if(currentBranch.isDefined){
       val currentBranchDefined = currentBranch.get
-      val blobsFromIndexDefined = blobsFromIndex.get
-      val allBranchBlobs = currentBranchDefined.getAllBlobs()
+      val blobsFromIndexDefined = blobsFromIndex.getOrElse(Index())
+      val allBranchBlobs = currentBranchDefined.getAllBlobs
       val blobsUncommitted = Index(allBranchBlobs).getNewBlobs(Index(blobsFromWD))
       val blobsUntracked = blobsFromIndexDefined.getNewBlobs(blobsUncommitted)
       val blobsUpdated = blobsFromIndexDefined.getBlobsUpdated(Index(blobsFromWD))

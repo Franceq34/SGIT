@@ -1,34 +1,27 @@
 package tools
 
+import java.io.File
+
 import classes.{Blob, Branch, Commit, Index}
 
 object Reader {
 
-  def clearStage(): Boolean = FileManager.writeFile(".sgit/index", text = "")
+  def clearStage(): Boolean = FileManager.writeFile(".sgit"+ File.separator +"index", text = "")
 
-  /*def currentBlo():Option[Index] ={
-    try{
-      //Read the index file
-      val index = FileManager.readFile(".sgit/index")
-      //Map the index in blob list
-      val blobs = index.getOrElse("").split("\n").map(str => Blob(str.split(" ")(0), "", str.split(" ")(1)))
-      //Return an index object made of blob list
-      Some(Index(blobs.toList))
-    }
-    catch
-      {
-        case _: Throwable => None
-      }
-  }*/
+  def isGitRepo: Boolean = FileManager.exists(".sgit")
 
   def currentIndex():Option[Index] ={
     try{
       //Read the index file
-      val index = FileManager.readFile(".sgit/index")
+      val index = FileManager.readFile(".sgit"+ File.separator +"index")
       //Map the index in blob list
-      val blobs = index.getOrElse("").split("\n").map(str => Blob(str.split(" ")(0), "", str.split(" ")(1)))
-      //Return an index object made of blob list
-      Some(Index(blobs.toList))
+      val blobsList = index.getOrElse("").split("\n")
+      if (blobsList.nonEmpty && blobsList(0) != "") {
+        //Return an index object made of blob list
+        Some(Index(blobsList.map(str => Blob(str.split(" ")(0), "", str.split(" ")(1))).toList))
+      } else {
+        Some(Index())
+      }
     }
     catch
       {
@@ -38,7 +31,7 @@ object Reader {
 
   def currentBranch():Option[Branch] = {
     try {
-      val headContent = FileManager.readFile(".sgit/HEAD.txt")
+      val headContent = FileManager.readFile(".sgit"+ File.separator +"HEAD.txt")
       val currentBranchPath = headContent.get.split(" ")(1)
       val currentBranchName = currentBranchPath.split("/").last
       readBranchByBranchname(currentBranchName)
@@ -51,7 +44,7 @@ object Reader {
 
   def readBranchByBranchname(nameBranch:String):Option[Branch] = {
     try{
-      val stringCommits = FileManager.readFile(".sgit/logs/refs/heads/" + nameBranch)
+      val stringCommits = FileManager.readFile(".sgit"+ File.separator +"logs"+ File.separator +"refs"+ File.separator +"heads"+ File.separator + nameBranch)
       if(stringCommits.isDefined && stringCommits.get != ""){
         val commits = stringCommits.get.split("\n").map(
           str =>
@@ -73,14 +66,14 @@ object Reader {
       }
   }
 
-  def getBlobsFromPath(path:String):List[Blob] ={
+  def getBlobsFromPath(path:String):List[Blob] = {
     try {
       if(FileManager.exists(path) && !path.contains(".sgit")){
         //if it's a directory
         if(FileManager.isDirectory(path)){
           //call add() on each child
           val files = FileManager.listFiles(path).getOrElse(List[String]())
-          files.flatMap((str: String) => getBlobsFromPath(path + "/" + str))
+          files.flatMap((str: String) => getBlobsFromPath(path + File.separator + str))
         }
         //if it's a file
         else if(FileManager.isFile(path)){
@@ -116,12 +109,12 @@ object Reader {
 
   def readBlobsByCommitIdHash(idHash:String):Option[List[Blob]] = {
     try {
-      val stringBlobs = FileManager.readFile(".sgit/objects/" + idHash.substring(0, 2) + "/" + idHash.substring(2))
+      val stringBlobs = FileManager.readFile(".sgit"+ File.separator +"objects"+ File.separator + idHash.substring(0, 2) + "/" + idHash.substring(2))
       val blobs = stringBlobs.getOrElse("").split("\n").map(
         str =>
           Blob(
             idHash = str.split(" ")(0),
-            content = "",
+            content = FileManager.readFile(".sgit"+ File.separator +"objects"+ File.separator + str.split(" ")(0).substring(0, 2)+ File.separator +str.split(" ")(0).substring(2)).get,
             path = str.split(" ")(1)
           )
       ).toList

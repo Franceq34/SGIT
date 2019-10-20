@@ -1,7 +1,7 @@
 import classes.{Blob, Index}
 import org.scalatest.FlatSpec
 
-class IndexTest extends FlatSpec{
+class IndexTest extends FlatSpec {
 
   "toString" should "return a string representation of a one blob index" in {
     val blob1 = Blob("a", "b", "c")

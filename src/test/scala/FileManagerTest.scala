@@ -81,7 +81,6 @@ class FileManagerTest extends FlatSpec {
     val pathFileUnknown = rdmPathUnknown()
     val newFile = new File(pathFileUnknown)
     assert(newFile.createNewFile())
-    println(FileManager.readFile(pathFileUnknown))
     assert(FileManager.readFile(pathFileUnknown) == "")
     newFile.delete()
   }
@@ -169,6 +168,17 @@ class FileManagerTest extends FlatSpec {
     assert(FileManager.writeFile(pathFileUnknown, "A simple text"))
     assert(FileManager.readFile(pathFileUnknown).get == "A simple text")
     file.delete()
+  }
+
+  "deleteFileRec" should "return true and delete every folder and file from path when given a valid path" in {
+    val pathDirectoryUnknown = rdmPathUnknown()
+    assert(new File(pathDirectoryUnknown).mkdirs())
+    val newDirectory = new File(pathDirectoryUnknown)
+    val newFile = new File(pathDirectoryUnknown + "/abc.txt")
+    val newFile2 = new File(pathDirectoryUnknown + "/def.txt")
+    assert(newFile.createNewFile())
+    assert(newFile2.createNewFile())
+    assert(FileManager.deleteFileRec(pathDirectoryUnknown))
   }
 
   //Return a path from a file that doesn't exist

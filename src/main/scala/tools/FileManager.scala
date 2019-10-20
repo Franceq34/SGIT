@@ -7,9 +7,9 @@ object FileManager{
 
   def isDirectory(path:String): Boolean = { new File(path).isDirectory }
 
-  def isFile(path:String): Boolean ={ new File(path).isFile }
+  def isFile(path:String): Boolean = { new File(path).isFile }
 
-  def listFiles(path:String): Option[List[String]] ={
+  def listFiles(path:String): Option[List[String]] = {
     try {
       Some(new File(path).listFiles().map((f:File) => f.getName).toList)
     }
@@ -50,6 +50,21 @@ object FileManager{
         true
       }
     catch
+      {
+        case _: Throwable => false
+      }
+  }
+
+  def deleteFileRec(path:String): Boolean = {
+    try {
+      val file = new File(path)
+      if (file.isDirectory) {
+        file.listFiles().map(
+          f => deleteFileRec(f.getAbsolutePath)
+        )
+      }
+      file.delete()
+    } catch
       {
         case _: Throwable => false
       }

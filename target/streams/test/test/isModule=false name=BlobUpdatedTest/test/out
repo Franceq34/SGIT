@@ -1,0 +1,4 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mBlobUpdatedTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mtoString[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a String version of the blob path followed by the differences[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the Blob path when the differences is empty[0m[0m

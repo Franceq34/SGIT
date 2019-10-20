@@ -1,6 +1,8 @@
 package classes
 
-import tools.{FileManager, CryptSHA1}
+import java.io.File
+
+import tools.{CryptSHA1, FileManager}
 
 case class Index(list: List[Blob] = List()){
 
@@ -53,6 +55,6 @@ case class Index(list: List[Blob] = List()){
 
   def containsBlob(blob: Blob):Boolean = list.exists(b => blob.hasSameHashThan(b))
 
-  def saveAsStage(): Boolean = FileManager.writeFile(".sgit/index", text = toString)
+  def saveAsStage(): Boolean = FileManager.writeFile(".sgit"+ File.separator +"index", text = toString)
 
 }

@@ -1,5 +1,7 @@
 package classes
 
+import java.io.File
+
 import tools.FileManager
 
 case class Branch(name: String, commits: List[Commit]){
@@ -16,7 +18,7 @@ case class Branch(name: String, commits: List[Commit]){
 
   def addCommit(commit: Commit): Branch = copy(commits = commits :+ commit)
 
-  def getAllBlobs():List[Blob] ={
+  def getAllBlobs:List[Blob] ={
     val allBlobs = commits.flatMap(commit => commit.index.list)
     filterBlobsRec(allBlobs)
   }
@@ -39,9 +41,9 @@ case class Branch(name: String, commits: List[Commit]){
 
   //Save the a branch commits in .sgit/logs/refs/heads/branchname
   def saveToLogs(): Boolean ={
-    if(FileManager.exists(".sgit/logs/refs/heads/"+name)){
+    if(FileManager.exists(".sgit"+File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name)){
       val content = commits.mkString("\n")
-      FileManager.writeFile(".sgit/logs/refs/heads/"+name, content)
+      FileManager.writeFile(".sgit"+File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name, content)
     } else {
       false
     }
@@ -49,9 +51,9 @@ case class Branch(name: String, commits: List[Commit]){
 
   //Save a branch current commit in .sgit/refs/heads/branchname
   def saveToRefs(): Boolean = {
-    if (FileManager.exists(".sgit/refs/heads/" + name)) {
+    if (FileManager.exists(".sgit"+ File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name)) {
       val content = commits.last.idHash
-      FileManager.writeFile(".sgit/refs/heads/" + name, content)
+      FileManager.writeFile(".sgit"+File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name, content)
     } else {
       false
     }
