@@ -1,7 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mAddTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mAdd[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if you try to add an unknown directory or file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return true if you try to add an existing directory or file[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should add a blob into the hashed path object directory[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should add a blob containing the same content[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if you try to add .sgit and its children[0m[0m

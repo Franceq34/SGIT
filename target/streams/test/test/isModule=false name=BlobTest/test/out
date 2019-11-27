@@ -1,9 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mBlobTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mtoStringIndex[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a String that includes hash and path[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mhasSamePathThan[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return true[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return false if two blobs has a different path[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetContentSeq[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a Seq[String] version of its content[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a Seq[String] version of its content when the content contains several lines[0m[0m

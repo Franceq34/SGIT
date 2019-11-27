@@ -1,6 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mDifferenceTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mtoString[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a String representing the difference when it's an addition[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should return a String representing the difference when it's a deletion[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32misDeletion[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should never return same value than isAddition[0m[0m
