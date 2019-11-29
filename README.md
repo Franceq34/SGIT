@@ -11,7 +11,7 @@ Please perform this set of commands to enable SGIT
 * `source install.sh`
 
 The SGIT instance will be available while this terminal is opened.
-> Test Use-cases
+## Test Use-cases
 
 * `mkdir SGITtest`
 * `cd SGITtest`
