@@ -4,6 +4,8 @@ import classes.{BlobUpdated, Branch, Commit, Difference, Index}
 import commands.SGITDiff.seqDiffsToString
 
 object Printer {
+  def printCommitDetails(name: String, message: String): Unit = println("["+name+"] "+message+"\n")
+
   def logCommits(commits:List[Commit]): Unit = println(commits.map(commit => commit.toStringLog).mkString("\n") + "\n")
 
   def diffs(blobUpdated: BlobUpdated):Unit = if(blobUpdated.differences.nonEmpty) println(blobUpdated + "\n")

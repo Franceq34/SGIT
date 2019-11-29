@@ -1,7 +1,7 @@
 package commands
 
 import classes.{Branch, Commit, Index}
-import tools.{CryptSHA1, Printer, Reader}
+import tools.{CryptSHA1, Diff, Printer, Reader}
 
 object SGITCommit {
 
@@ -25,6 +25,8 @@ object SGITCommit {
         commit.saveToObjects()
         //vider le stage
         Reader.clearStage()
+        //Print result
+        Printer.printCommitDetails(currentBranch.name, message)
       } else {
         Printer.nothingToCommit()
       }
