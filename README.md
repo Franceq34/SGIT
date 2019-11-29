@@ -7,7 +7,7 @@
 Please perform this set of commands to enable SGIT
 
 * `git clone https://github.com/Franceq34/SGIT.git`
-* `cd sgit`
+* `cd SGIT`
 * `source install.sh`
 
 The SGIT instance will be available while this terminal is opened.
