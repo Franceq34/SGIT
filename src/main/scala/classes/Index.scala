@@ -30,7 +30,18 @@ case class Index(list: List[Blob] = List()){
   //Creates an index with the blobs in newIndex that are not already in this
   def getNewBlobs(newIndex: Index):Index = {
     Index(newIndex.list.flatMap{
-      case blob if !this.containsBlob(blob) => {
+      case blob if !this.containsSameBlob(blob) => {
+        Some(blob)
+      }
+      case _ => {
+        None
+      }
+    })
+  }
+
+  def getBlobsNotIn(branch: Index, index: Index):Index = {
+    Index(this.list.flatMap{
+      case blob if index.containsBlobWithSamePathButDifferentHash(blob) || (branch.containsBlobWithSamePathButDifferentHash(blob) && !index.containsBlob(blob)) => {
         Some(blob)
       }
       case _ => {
@@ -53,7 +64,9 @@ case class Index(list: List[Blob] = List()){
 
   def containsBlobWithSamePathButDifferentHash(blob: Blob):Boolean = list.exists(b => !blob.hasSameHashThan(b) && blob.hasSamePathThan(b))
 
-  def containsBlob(blob: Blob):Boolean = list.exists(b => blob.hasSameHashThan(b))
+  def containsBlob(blob: Blob):Boolean = list.exists(b => blob.hasSamePathThan(b))
+
+  def containsSameBlob(blob: Blob):Boolean = list.exists(b => blob.hasSamePathThan(b) && blob.hasSameHashThan(b))
 
   def saveAsStage(): Boolean = FileManager.writeFile(".sgit"+ File.separator +"index", text = toString)
 

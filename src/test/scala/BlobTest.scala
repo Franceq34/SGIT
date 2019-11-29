@@ -1,3 +1,4 @@
+/*
 import classes.Blob
 import org.scalatest.FlatSpec
 
@@ -30,3 +31,4 @@ class BlobTest extends FlatSpec{
     assert(blob1.getContentSeq == Seq("b", "a"))
   }
 }
+*/

@@ -14,8 +14,10 @@ object SGITStatus {
       val blobsFromIndexDefined = blobsFromIndex.getOrElse(Index())
       val allBranchBlobs = currentBranchDefined.getAllBlobs
       val blobsUncommitted = Index(allBranchBlobs).getNewBlobs(Index(blobsFromWD))
-      val blobsUntracked = blobsFromIndexDefined.getNewBlobs(blobsUncommitted)
-      val blobsUpdated = blobsFromIndexDefined.getBlobsUpdated(Index(blobsFromWD))
+      val blobsBeforeUntracked = Index(allBranchBlobs).getNewBlobs(blobsUncommitted)
+      val blobsUntracked = blobsFromIndexDefined.getNewBlobs(blobsBeforeUntracked)
+      val blobsBeforeUpdated = Index(allBranchBlobs).getBlobsUpdated(Index(blobsFromWD))
+      val blobsUpdated = blobsFromIndexDefined.getNewBlobs(blobsBeforeUpdated)
 
       //Print current branch
       Printer.currentBranch(currentBranchDefined)

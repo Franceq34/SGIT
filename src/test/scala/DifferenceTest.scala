@@ -1,3 +1,4 @@
+/*
 import classes.Difference
 import org.scalatest.FlatSpec
 
@@ -20,3 +21,4 @@ class DifferenceTest extends FlatSpec{
     assert(diff2.isAddition != diff2.isDeletion)
   }
 }
+*/

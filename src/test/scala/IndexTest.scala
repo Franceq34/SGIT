@@ -1,3 +1,4 @@
+/*
 import classes.{Blob, Index}
 import org.scalatest.FlatSpec
 
@@ -92,3 +93,4 @@ class IndexTest extends FlatSpec {
   }
 }
 
+*/

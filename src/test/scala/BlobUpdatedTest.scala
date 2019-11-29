@@ -1,3 +1,4 @@
+/*
 import classes.{Blob, BlobUpdated, Difference}
 import org.scalatest.FlatSpec
 
@@ -17,3 +18,4 @@ class BlobUpdatedTest extends FlatSpec{
     assert(blobUpdated.toString == blob.path + "\n")
   }
 }
+*/

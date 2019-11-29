@@ -8,7 +8,7 @@ case class Blob(override val idHash: String, content: String, path: String) exte
 
   override def toString: String = idHash + " "  + path
 
-  def hasSamePathThan(b: Blob): Boolean = path == b.path
+  def hasSamePathThan(b: Blob): Boolean = path == b.path || path == "./"+b.path || "./"+path == b.path
 
   def getContentSeq:Seq[String] = content.split("\n").toSeq
 

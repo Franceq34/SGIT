@@ -43,6 +43,8 @@ case class Branch(name: String, commits: List[Commit]){
   def saveToLogs(): Boolean ={
     if(FileManager.exists(".sgit"+File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name)){
       val content = commits.mkString("\n")
+      println(content)
+      println(".sgit"+File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name)
       FileManager.writeFile(".sgit"+File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name, content)
     } else {
       false
@@ -51,9 +53,9 @@ case class Branch(name: String, commits: List[Commit]){
 
   //Save a branch current commit in .sgit/refs/heads/branchname
   def saveToRefs(): Boolean = {
-    if (FileManager.exists(".sgit"+ File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name)) {
+    if (FileManager.exists(".sgit"+File.separator +"refs"+File.separator +"heads"+File.separator +name)) {
       val content = commits.last.idHash
-      FileManager.writeFile(".sgit"+File.separator +"logs"+File.separator +"refs"+File.separator +"heads"+File.separator +name, content)
+      FileManager.writeFile(".sgit"+File.separator +"refs"+File.separator +"heads"+File.separator +name, content)
     } else {
       false
     }

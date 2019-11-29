@@ -1,3 +1,4 @@
+/*
 import classes.{Blob, Commit, Index}
 import org.scalatest.FlatSpec
 
@@ -15,4 +16,4 @@ class CommitTest extends FlatSpec{
   "addToObjects" should "return false if the operations failed" in{
 
   }
-}
+}*/

@@ -30,6 +30,8 @@ object Printer {
 
   def noCommits(): Unit = println("No commits yet\n")
 
+  def nothingToCommit(): Unit = println("nothing to commit, working tree clean\n")
+
   def currentBranch(currentBranch: Branch): Unit = println("On branch " + currentBranch.name + "\n")
 
   def invalidArgumentsNumber(): Unit = println("Invalid argument number")

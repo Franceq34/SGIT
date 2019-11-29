@@ -11,7 +11,7 @@ object SGITLog {
   def log(maybeCurrentBranch:Option[Branch]): Boolean = {
     if (maybeCurrentBranch.isDefined) {
       val currentBranch = maybeCurrentBranch.get
-      Printer.logCommits(currentBranch.commits)
+      Printer.logCommits(currentBranch.commits.reverse)
       true
     } else false
   }

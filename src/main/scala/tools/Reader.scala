@@ -114,7 +114,7 @@ object Reader {
         str =>
           Blob(
             idHash = str.split(" ")(0),
-            content = FileManager.readFile(".sgit"+ File.separator +"objects"+ File.separator + str.split(" ")(0).substring(0, 2)+ File.separator +str.split(" ")(0).substring(2)).get,
+            content = FileManager.readFile(".sgit"+ File.separator +"objects"+ File.separator + str.split(" ")(0).substring(0, 2)+ File.separator +str.split(" ")(0).substring(2)).getOrElse(""),
             path = str.split(" ")(1)
           )
       ).toList

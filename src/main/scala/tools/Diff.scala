@@ -22,7 +22,7 @@ object Diff {
   def diffBlobs(list1: List[Blob], list2: List[Blob]):List[BlobUpdated] ={
     list1.flatMap(blob1 =>
       list2.flatMap(blob2 =>
-        if(blob1.path == blob2.path)  Some(BlobUpdated(blob2, diffSeqStr(blob1.getContentSeq, blob2.getContentSeq)))
+        if(blob1.hasSamePathThan(blob2))  Some(BlobUpdated(blob2, diffSeqStr(blob1.getContentSeq, blob2.getContentSeq)))
         else None
       )
     )
