@@ -32,7 +32,7 @@ The SGIT instance will be available while this terminal is opened.
 * `sgit add .`
 * `sgit diff`
 * `sgit status`
-* `sgit commit -m "Second`
+* `sgit commit -m "Second"`
 * `sgit status`
 * `sgit log`
 * `sgit log -p`
